@@ -1,0 +1,269 @@
+/* ==================== GLOBAL STYLES ==================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 1920px;
+}
+
+/* ==================== HERO STYLES ==================== */
+
+.hero {
+  background-image: url(./assets/Skills-Assessment-assets/HERO\ 1.jpg);
+  height: 944px;
+  max-width: 100vw;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero h1 {
+  font-size: 8rem;
+  color: #de041c;
+  letter-spacing: -8px;
+  font-weight: 900;
+}
+
+.hero h2 {
+  margin-top: -40px;
+  font-size: 4.35rem;
+}
+
+.hero p {
+  max-width: 700px;
+  font-weight: 600;
+}
+
+.space {
+  height: 50px;
+  background-color: #de041c;
+  margin-bottom: 10px;
+}
+
+/* ==================== CONTAINER STYLES ==================== */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ==================== COLUMN-1 STYLES ==================== */
+
+.column-1 {
+  max-width: 600px;
+}
+
+.collage img:nth-child(2) {
+  margin-right: 5.5px;
+}
+
+/* ==================== COLUMN-2 STYLES ==================== */
+
+.collage-2 {
+  flex: auto;
+  margin-top: 180px;
+  margin-left: -273px;
+}
+
+.collage-2 img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+iframe {
+  box-shadow: 0 0 15px black;
+  position: absolute;
+  top: 760px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -260px;
+}
+
+/* ==================== COLUMN-3 STYLES ==================== */
+
+.column-3 {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-left: 10px;
+  flex: 2 1 auto;
+}
+
+.column-3::before {
+  content: "";
+  position: absolute;
+  background-image: url(./assets/Skills-Assessment-assets/SPLASH\ WATERMARK.png);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: invert(80%);
+  object-fit: none;
+}
+
+.column-3 div {
+  position: relative;
+}
+
+.column-3 h4 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-bottom: -10px;
+}
+
+.column-3 h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #de041c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #000;
+}
+
+.column-3 p {
+  margin-bottom: 20px;
+  max-width: 600px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.column-3 p:nth-child(3) {
+  color: #de041c;
+  font-weight: 700;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media screen and (max-width: 1900px) {
+  .hero h1 {
+    font-size: 6rem;
+    margin-bottom: 5px;
+  }
+
+  .hero h2 {
+    letter-spacing: -2px;
+    font-size: 3.3rem;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-1 {
+    margin-top: 100px;
+  }
+
+  .collage-2 {
+    position: static;
+    margin-top: 0;
+    margin-left: 0px;
+  }
+
+  .collage-2 img {
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+  }
+
+  .column-3 {
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+
+  .column-3 div:nth-child(1) {
+  }
+
+  @media screen and (max-width: 975px) {
+    .hero {
+      height: 500px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+
+    .hero p {
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+
+    .container {
+      gap: 0;
+    }
+
+    iframe {
+      width: 300px;
+      height: 180px;
+      margin-bottom: 0px;
+      top: 430px;
+    }
+
+    .collage img,
+    .collage-2 img {
+      max-width: 100%;
+    }
+
+    .collage,
+    .column-2 {
+      padding: 0 5px;
+    }
+
+    .column-2 {
+      margin-top: 20px;
+    }
+
+    .column-3 h2,
+    h4 {
+      text-align: center;
+    }
+    .column-3 p {
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .collage {
+      margin-bottom: 10px;
+    }
+
+    .column-2 {
+      margin-right: 20px;
+    }
+  }
+}
